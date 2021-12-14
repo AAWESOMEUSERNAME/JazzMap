@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { fetchAll } from '../../repo/MusicianRepo'
 
 // Define a type for the slice state
 interface MusicianState {
@@ -18,7 +17,7 @@ const initialState: MusicianState = {
 export const fetchAllMusician = createAsyncThunk(
     'musician/fetchAll',
     async () => {
-        return await fetchAll()
+        return await []
     }
 )
 
