@@ -1,0 +1,6 @@
+@use 'src/common/utils/styleUtils';
+
+.container {
+    font-size: styleUtils.toRem(20px);
+    background-color: aquamarine;
+}

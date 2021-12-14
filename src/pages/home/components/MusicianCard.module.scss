@@ -1,0 +1,37 @@
+@use 'src/common/utils/styleUtils';
+
+.container {
+    width: styleUtils.toRem(200px);
+    height: styleUtils.toRem(200px);
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.mask {
+    width: calc(100% - 1.5em);
+    height: calc(100% - 1.5em);
+    padding: 0.75em;
+    color: white;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        opacity: 1;
+    }
+
+}
+
+.mask__name {
+    font-size: 2em;
+}
+
+.mask__date {
+    font-size: 0.5em;
+}
