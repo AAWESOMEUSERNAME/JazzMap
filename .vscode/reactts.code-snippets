@@ -1,0 +1,19 @@
+{
+	"React component template": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "reactts",
+		"body": [
+			"import React from 'react'",
+			"import styles from './$0.module.scss'",
+			"",
+			"export type $0Props = any",
+			"",
+			"const $0 = (props: $0Props) => {",
+			"    return <div></div>",
+			"}",
+			"",
+			"export default $0"
+		],
+		"description": "Create react component"
+	}
+}

@@ -3,6 +3,7 @@
 .container {
     width: styleUtils.toRem(200px);
     height: styleUtils.toRem(200px);
+    margin: 2px;
     transition: transform 0.5s ease-in-out;
 
     &:hover {

@@ -1,10 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
+import { apiSlice } from './slices/apiSlice'
 import MusicianReducers from './slices/MusicianSlice'
 
 const store = configureStore({
     reducer: {
-        musicians: MusicianReducers
-    }
+        musicians: MusicianReducers,
+        [apiSlice.reducerPath]: apiSlice.reducer
+    },
+    middleware: getDefaultMiddleware => getDefaultMiddleware().concat(apiSlice.middleware)
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

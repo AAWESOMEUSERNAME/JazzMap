@@ -8,3 +8,5 @@ interface Musician {
     profileKey: string?,
     ablums: AlbumBase[]
 }
+
+declare type MusicianBasic = Omit<Musician, 'ablums'>

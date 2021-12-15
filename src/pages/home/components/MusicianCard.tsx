@@ -4,7 +4,7 @@ import styles from './MusicianCard.module.scss'
 
 const { container, mask } = styles
 
-const MusicianCard = (props: Musician) => {
+const MusicianCard = (props: MusicianBasic) => {
 
     const birth = props.birth ? moment(props.birth).format('YYYY/MM/DD') : 'unknown'
     const death = props.death ? moment(props.death).format('YYYY/MM/DD') : undefined
