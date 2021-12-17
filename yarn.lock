@@ -1290,7 +1290,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.15.4":
+"@babel/runtime@^7.12.0", "@babel/runtime@^7.14.5", "@babel/runtime@^7.15.4":
   version "7.16.5"
   resolved "https://registry.npmmirror.com/@babel/runtime/download/@babel/runtime-7.16.5.tgz#7f3e34bf8bdbbadf03fbb7b1ea0d929569c9487a"
   integrity sha512-TXWihFIS3Pyv5hzR7j6ihmeLkZfrXGxAr5UfSl8CHf+6q/wpiYDkUau0czckpYG8QmnCIuPpdLtuA9VmuGGyMA==
@@ -1853,6 +1853,91 @@
   version "2.11.0"
   resolved "https://registry.npmmirror.com/@popperjs/core/download/@popperjs/core-2.11.0.tgz"
   integrity sha512-zrsUxjLOKAzdewIDRWy9nsV1GQsKBCWaGwsZQlCgr6/q+vjyZhFgqedLfFBuI9anTPEUT4APq9Mu0SZBTzIcGQ==
+
+"@react-spring/animated@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/animated/download/@react-spring/animated-9.3.1.tgz#ffc4706121e8406efeaeacb407b42b5022943b46"
+  integrity sha512-23YaERZ++BwZ8F8PxPFqrpOwp/JZun1Pj6aHZtPAU42j5LycBRasT9XMw7Eyr7zNFhT+rl3R3wFfd4WX6Ax+UA==
+  dependencies:
+    "@react-spring/shared" "~9.3.0"
+    "@react-spring/types" "~9.3.0"
+
+"@react-spring/core@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/core/download/@react-spring/core-9.3.1.tgz#b98e1dca1eb4871dec75fdab350327e8a5222865"
+  integrity sha512-8rmfmEHLHGtF1CUiXRn64YJqsXNxv2cGX8oNnBnsuoE33c48Zc34t2VIMB4R9q5zwIUCvDBGfiEenA8ZAPxqOQ==
+  dependencies:
+    "@react-spring/animated" "~9.3.0"
+    "@react-spring/shared" "~9.3.0"
+    "@react-spring/types" "~9.3.0"
+
+"@react-spring/konva@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/konva/download/@react-spring/konva-9.3.1.tgz#7a915c1c912a81dc27d1a1bc31eb47c0a2a0c643"
+  integrity sha512-woG2DeDcUlz5hB8g9pA/tyUWU6dMrAzyUsNiBWVCyI9UqKA7CUKjz+ODOUi+hS++3Kz7kZSr3u0zzHHfxvoTPQ==
+  dependencies:
+    "@react-spring/animated" "~9.3.0"
+    "@react-spring/core" "~9.3.0"
+    "@react-spring/shared" "~9.3.0"
+    "@react-spring/types" "~9.3.0"
+
+"@react-spring/native@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/native/download/@react-spring/native-9.3.1.tgz#e1ac9d04d833b8d97e2d63630c4204f71915a29a"
+  integrity sha512-NAC1wHIUvy1umCVQRxcS+31Dmr9NszBY06sHy3jR8/HVuKNtaDUARVF3AYL/HfbIy4m6yR3tcIkM2NQ0SO+rZA==
+  dependencies:
+    "@react-spring/animated" "~9.3.0"
+    "@react-spring/core" "~9.3.0"
+    "@react-spring/shared" "~9.3.0"
+    "@react-spring/types" "~9.3.0"
+
+"@react-spring/rafz@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/rafz/download/@react-spring/rafz-9.3.1.tgz#8dd6a598ffea487252b75d05d199e4aca5ea9d5e"
+  integrity sha512-fEBMCarGVl+/2kdO+g6Zig4F+3ymwmcGN8S71gb1c7Cbbxb87kviPz8EhshfIHoiLeJPGlqwcuGbxNmZbBamvA==
+
+"@react-spring/shared@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/shared/download/@react-spring/shared-9.3.1.tgz#e7f22a4b8f5fea4491fa6a24c108db5abd19ddba"
+  integrity sha512-jhPpxzURGo6Nty90ex1lkxmZae7w/VAbnGmb/nXcYoZwSoNR+W2aAd00iXsh2ZGz6MgoJOsc495JeG3uC7Am8A==
+  dependencies:
+    "@react-spring/rafz" "~9.3.0"
+    "@react-spring/types" "~9.3.0"
+
+"@react-spring/three@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/three/download/@react-spring/three-9.3.1.tgz#91a50851639c5a88fed8f76b4e25ff388d2b24e7"
+  integrity sha512-40iRIX2DrY+a81hIliOog6TMg/ZAtHGeZr95r0vKAsl+iX1g9Hs8XCS4wTeQIUgydZpbpShk/JL6mkcstEfBdw==
+  dependencies:
+    "@react-spring/animated" "~9.3.0"
+    "@react-spring/core" "~9.3.0"
+    "@react-spring/shared" "~9.3.0"
+    "@react-spring/types" "~9.3.0"
+
+"@react-spring/types@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/types/download/@react-spring/types-9.3.1.tgz#20f392ecad15a1ea6c0865ffe86ca5016c05a278"
+  integrity sha512-W/YMJMX35XgGGzX0gKORBTwnvQ+1loDOFN3XlZkW5fgpEY+7VkRUpPyqPWXQr3n6lHrsLmHIGdpznqZi54ACTQ==
+
+"@react-spring/web@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/web/download/@react-spring/web-9.3.1.tgz#5b377ba7ad52e746c2b59e2738c021de3f219d0b"
+  integrity sha512-sisZIgFGva/Z+xKWPSfXpukF0AP3kR9ALTxlHL87fVotMUCJX5vtH/YlVcywToEFwTHKt3MpI5Wy2M+vgVEeaw==
+  dependencies:
+    "@react-spring/animated" "~9.3.0"
+    "@react-spring/core" "~9.3.0"
+    "@react-spring/shared" "~9.3.0"
+    "@react-spring/types" "~9.3.0"
+
+"@react-spring/zdog@~9.3.0":
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/@react-spring/zdog/download/@react-spring/zdog-9.3.1.tgz#70fccd80c35248217de6252c4c2ffca16b4cff2f"
+  integrity sha512-QflA/fII9zWe9CSOA8QGSLMjUwyrtD1TX6YVzUSn/nlr2f7PlZPijdpdu9Cvdirgss472cUS7cRIUfll0TepqA==
+  dependencies:
+    "@react-spring/animated" "~9.3.0"
+    "@react-spring/core" "~9.3.0"
+    "@react-spring/shared" "~9.3.0"
+    "@react-spring/types" "~9.3.0"
 
 "@reduxjs/toolkit@^1.7.0":
   version "1.7.0"
@@ -7752,7 +7837,7 @@ html-entities@^2.1.0:
   resolved "https://registry.nlark.com/html-entities/download/html-entities-2.3.2.tgz"
   integrity sha1-dgtARoXLHXlOT0t0QzLjsA3P5Ig=
 
-html-escaper@^2.0.0:
+html-escaper@^2.0.0, html-escaper@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npm.taobao.org/html-escaper/download/html-escaper-2.0.2.tgz"
   integrity sha1-39YAJ9o2o238viNiYsAKWCJoFFM=
@@ -7769,6 +7854,13 @@ html-minifier-terser@^5.0.1:
     param-case "^3.0.3"
     relateurl "^0.2.7"
     terser "^4.6.3"
+
+html-parse-stringify@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.nlark.com/html-parse-stringify/download/html-parse-stringify-3.0.1.tgz#dfc1017347ce9f77c8141a507f233040c59c55d2"
+  integrity sha1-38EBc0fOn3fIFBpQfyMwQMWcVdI=
+  dependencies:
+    void-elements "3.1.0"
 
 html-tags@^3.1.0:
   version "3.1.0"
@@ -7907,6 +7999,13 @@ human-signals@^1.1.1:
   version "1.1.1"
   resolved "https://registry.nlark.com/human-signals/download/human-signals-1.1.1.tgz?cache=0&sync_timestamp=1624364612113&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fhuman-signals%2Fdownload%2Fhuman-signals-1.1.1.tgz"
   integrity sha1-xbHNFPUK6uCatsWf5jujOV/k36M=
+
+i18next@^21.6.2:
+  version "21.6.2"
+  resolved "https://registry.npmmirror.com/i18next/download/i18next-21.6.2.tgz#3bfc35fc3ac32541a2a5b80f1dc5306c994dd14f"
+  integrity sha512-S1zSTrs2lgPH8iG68pMWh3P7OzQMcs3+Qr5F39JTyGbe/xl5cW4cF8MTPKSy6F25tFTcKBq915IoEZUWewkldg==
+  dependencies:
+    "@babel/runtime" "^7.12.0"
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -11886,6 +11985,15 @@ react-helmet-async@^1.0.7:
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
 
+react-i18next@^11.15.1:
+  version "11.15.1"
+  resolved "https://registry.npmmirror.com/react-i18next/download/react-i18next-11.15.1.tgz#1dec5f2bf2cf7bc5043e9fcb391c9d6e24bb9bfe"
+  integrity sha512-lnje1uKu5XeM5MLvfbt1oygF+nEIZnpOM4Iu8bkx5ECD4XRYgi3SJDmolrp0EDxDHeK2GgFb+vEEK0hsZ9sjeA==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    html-escaper "^2.0.2"
+    html-parse-stringify "^3.0.1"
+
 react-inspector@^5.1.0:
   version "5.1.1"
   resolved "https://registry.nlark.com/react-inspector/download/react-inspector-5.1.1.tgz?cache=0&sync_timestamp=1619144664777&other_urls=https%3A%2F%2Fregistry.nlark.com%2Freact-inspector%2Fdownload%2Freact-inspector-5.1.1.tgz"
@@ -12034,6 +12142,18 @@ react-sizeme@^3.0.1:
     invariant "^2.2.4"
     shallowequal "^1.1.0"
     throttle-debounce "^3.0.1"
+
+react-spring@^9.3.2:
+  version "9.3.2"
+  resolved "https://registry.npmmirror.com/react-spring/download/react-spring-9.3.2.tgz#1456ef1ab1a3997c6c39693a9fd18cfd46c92930"
+  integrity sha512-LMFgjvTJVg2ltthzgJcZ7siOdRig7L8wJZIHrc7p6ss4AaJ446xHzm9L2ZQha1ZC9QVY8/e6XfLhMTFAG6dtjw==
+  dependencies:
+    "@react-spring/core" "~9.3.0"
+    "@react-spring/konva" "~9.3.0"
+    "@react-spring/native" "~9.3.0"
+    "@react-spring/three" "~9.3.0"
+    "@react-spring/web" "~9.3.0"
+    "@react-spring/zdog" "~9.3.0"
 
 react-syntax-highlighter@^13.5.3:
   version "13.5.3"
@@ -14265,6 +14385,11 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
+
+void-elements@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.nlark.com/void-elements/download/void-elements-3.1.0.tgz#614f7fbf8d801f0bb5f0661f5b2f5785750e4f09"
+  integrity sha1-YU9/v42AHwu18GYfWy9XhXUOTwk=
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"

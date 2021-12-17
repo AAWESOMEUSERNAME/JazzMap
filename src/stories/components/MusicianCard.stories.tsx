@@ -2,7 +2,7 @@ import React from 'react'
 import moment from 'moment'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import MusicianCard from '../../pages/home/components/MusicianCard'
-import photo from '../../assets/photo/Louis_Armstrong.jpg'
+import photo from '../assets/mock.jpg'
 
 export default {
     title: 'Components/MusicianCard',

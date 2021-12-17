@@ -1,0 +1,57 @@
+@use "src/common/utils/styleUtils";
+
+.container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.close {
+    position: absolute;
+    right: styleUtils.toRem(8px);
+    top: styleUtils.toRem(8px);
+    z-index: 1;
+    width: styleUtils.toRem(20px);
+    height: styleUtils.toRem(20px);
+    background-size: contain;
+
+    &:hover {
+        background-image: url(../../../assets/close_red.svg);
+    }
+}
+.close_light {
+    composes: close;
+    background-image: url(../../../assets/close_light.svg);
+}
+.close_dark {
+    composes: close;
+    background-image: url(../../../assets/close_dark.svg);
+}
+
+.sider {
+    width: styleUtils.toRem(250px);
+
+    & > div {
+        margin: styleUtils.toRem(25px);
+    }
+    z-index: 2;
+}
+
+.sider__header {
+    background-size: cover;
+    height: styleUtils.toRem(200px);
+    width: styleUtils.toRem(200px);
+}
+
+.sider__content {
+    margin: styleUtils.toRem(10px);
+}
+
+.content {
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
+}

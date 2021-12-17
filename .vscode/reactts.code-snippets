@@ -8,7 +8,7 @@
 			"",
 			"export type $0Props = any",
 			"",
-			"const $0 = (props: $0Props) => {",
+			"const $0:React.FC<$0Props> = (props) => {",
 			"    return <div></div>",
 			"}",
 			"",
