@@ -28,7 +28,7 @@ const template: ComponentStory<typeof MusicianGroup> = (args) => {
         setData(newData)
     }
 
-    console.log('data',data)
+    console.log('data', data)
     return <>
         <button style={{ position: 'fixed', top: '100px', right: 0, width: '100px', height: '50px', backgroundColor: 'red' }} onClick={remove}>
             减少元素

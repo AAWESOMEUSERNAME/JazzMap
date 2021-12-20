@@ -1,9 +1,8 @@
 @use 'src/common/utils/styleUtils';
 
 .container {
-    width: styleUtils.toRem(200px);
-    height: styleUtils.toRem(200px);
-    margin: 2px;
+    width: 100%;
+    height: 100%;
     transition: transform 0.5s ease-in-out;
 
     &:hover {
