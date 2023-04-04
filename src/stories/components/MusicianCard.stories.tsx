@@ -12,7 +12,7 @@ export default {
     }
 } as ComponentMeta<typeof MusicianCard>
 
-const Template: ComponentStory<typeof MusicianCard> = (args) => <MusicianCard {...args} />
+const Template: ComponentStory<typeof MusicianCard> = (args) => <div style={{width:'200px',height: '200px'}}><MusicianCard {...args} /></div>
 
 export const Default = Template.bind({})
 Default.args = {

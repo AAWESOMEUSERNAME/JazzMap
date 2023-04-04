@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './MusicianDetail.module.scss'
 import detailMap from './details'
 import { animated, useChain, useSpring, useSpringRef } from 'react-spring'
+import { commonSpringConfig } from '../../../common/constants/animate'
 
 export type CloseIconStyle = 'light' | 'dark'
 export type MusicianDetailProps = {
@@ -26,6 +27,7 @@ const MusicianDetail: React.FC<MusicianDetailProps> = ({
         left: '0%',
         reverse: !show,
         ref: containerSpringRef,
+        config: commonSpringConfig,
         onRest: () => !show && onClose && onClose()
     })
     const siderSpringRef = useSpringRef()
@@ -33,6 +35,7 @@ const MusicianDetail: React.FC<MusicianDetailProps> = ({
         from: { transform: '-100%' },
         transform: '0%', reset: true,
         reverse: !show,
+        config: commonSpringConfig,
         ref: siderSpringRef
     })
     const contentSpringRef = useSpringRef()
@@ -41,6 +44,7 @@ const MusicianDetail: React.FC<MusicianDetailProps> = ({
         transform: '0%',
         opacity: 1,
         reverse: !show,
+        config: commonSpringConfig,
         ref: contentSpringRef
     })
 

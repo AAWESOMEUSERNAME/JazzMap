@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { animated, useTransition } from 'react-spring'
+import { commonSpringConfig } from '../../../common/constants/animate'
 import MusicianCard from './MusicianCard'
 import MusicianDetail from './MusicianDetail'
 import styles from './MusicianGroup.module.scss'
@@ -16,12 +17,7 @@ const MusicianGroup = (props: MusicianGroupProps) => {
     const [detailItem, setItem] = useState<MusicianBasic | null>()
 
     const transitions = useTransition(data, {
-        config: {
-            mass: 20,
-            tension: 210,
-            friction: 85,
-            clamp: true
-        },
+        config: commonSpringConfig,
         from: { opacity: 0 },
         enter: { opacity: 1 },
         leave: { opacity: 0 },
